@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/btn_sotuvchi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sotuvchi"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:foreground="?selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@id/btn_xaridor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btn_xaridor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xaridor"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:foreground="?selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_buyurtma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_sotuvchi"/>
+
+    <TextView
+        android:id="@+id/btn_buyurtma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buyurtma"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:foreground="?selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_xaridor"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
